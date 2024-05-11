@@ -1,0 +1,26 @@
+{
+  "name": "nodejstest",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian0o0/kentomomonguyen.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "brian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brian0o0/kentomomonguyen/issues"
+  },
+  "homepage": "https://github.com/Brian0o0/kentomomonguyen#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
