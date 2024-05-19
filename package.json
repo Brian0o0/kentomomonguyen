@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
   },
   "homepage": "https://github.com/Brian0o0/kentomomonguyen#readme",
   "dependencies": {
-    "express": "4.18.2"
+    "dotenv": "16.4.5",
+    "ejs": "3.1.8",
+    "express": "4.18.2",
+    "msnodesqlv8": "^4.2.1",
+    "mssql": "^10.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.0"
   }
 }
