@@ -1,5 +1,5 @@
 const express = require('express');
-const { getHomePage, getTestPage } = require('../controllers/homeController')
+const { getHomePage, getTestPage, form, getdata } = require('../controllers/homeController')
 const router = express.Router();
 const { pool } = require('../config/database');
 
@@ -25,5 +25,8 @@ router.get('/test2', async (req, res) => {
         res.status(500).json(error);
     }
 });
+
+router.get('/form', form);
+router.post('/dataform', getdata);
 
 module.exports = router;

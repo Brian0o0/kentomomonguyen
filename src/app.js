@@ -8,8 +8,9 @@ const configViewEngine = require('./config/viewEngine');
 const webRouter = require('./routers/web');
 //config template engine
 configViewEngine(app);
-
-
+//config req.body
+app.use(express.json()) // for json
+app.use(express.urlencoded({ extended: true })) // for form data
 
 
 
@@ -22,7 +23,7 @@ Sử dụng hàm riêng để xử lý route: Khi bạn đang làm việc với 
 có nhiều route, hoặc khi bạn muốn tách biệt rõ ràng giữa định nghĩa route và logic xử lý, 
 cách này sẽ giúp mã nguồn của bạn dễ quản lý và bảo trì hơn
 */
-app.use('/testr', webRouter);
+app.use('/', webRouter);
 
 
 
